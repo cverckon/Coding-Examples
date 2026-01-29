@@ -82,8 +82,9 @@ lm_y.fit(np.array(df_train[predictors]).reshape(-1,len(predictors)), df_train['a
 y_pred_lm = lm_y.predict(np.array(df_test[predictors]).reshape(-1,len(predictors)))
 y_pred_rf = rfr_y.predict(df_test[predictors])
 
-r2_lm_y = np.around(r2_score(y_pred_lm, df_test['area']), 3)
-r2_rf_y = np.around(r2_score(y_pred_rf, df_test['area']), 3)
+r2_lm_y = np.around(r2_score(df_test['area'], y_pred_lm), 3)
+r2_rf_y = np.around(r2_score(df_test['area'], y_pred_rf), 3)
+
 print(f'The R2 value for the random forest model is {r2_rf_y} and the R2 for the linear regression model is {r2_lm_y}')
 
 fig, ax = plt.subplots(figsize = (10,8))
