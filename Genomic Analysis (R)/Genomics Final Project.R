@@ -9,6 +9,8 @@ library(org.Hs.eg.db)
 library(clusterProfiler)
 library(enrichplot)
 
+
+# preset plot colors
 col_control <- "royalblue4"
 col_DPN <- "green4"
 col_OHT <- "tan4"
