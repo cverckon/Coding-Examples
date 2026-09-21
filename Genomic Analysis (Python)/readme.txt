@@ -1,0 +1,1 @@
+Jupyter Notebook file DESeq2_Python contains code for DESeq2 pipeline, all other documents were used to create python coding environment (3.14.7) in Visual Studio Code or convert airway dataset from R to python data frames.
